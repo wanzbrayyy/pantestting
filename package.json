@@ -8,8 +8,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "apt-get update && apt-get install -y build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev && npm install --production && npm run build:vite && npm cache clean --force",
-    "build:vite": "vite build",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -24,7 +23,7 @@
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-tabs": "^1.0.4",
     "@radix-ui/react-toast": "^1.1.5",
-    "canvas": "^2.11.2",
+    "jimp": "^0.22.10",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "framer-motion": "^10.16.4",

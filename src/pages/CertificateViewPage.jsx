@@ -22,7 +22,6 @@ const CertificateViewPage = () => {
   const [loadingProgress, setLoadingProgress] = useState(0);
   const [isEditing, setIsEditing] = useState(false);
   const [formData, setFormData] = useState({ userName: '', profilePicUrl: '' });
-  const canvasRef = useRef(null);
 
   useEffect(() => {
     const foundCert = certificates.find(c => c.id.toString() === certificateId);
@@ -39,7 +38,7 @@ const CertificateViewPage = () => {
       setLoadingProgress(prev => (prev < 90 ? prev + 10 : 90));
     }, 150);
 
-    generateCertificate(canvasRef.current, name, course, picUrl)
+    generateCertificate(name, course, picUrl)
       .then(url => {
         clearInterval(progressInterval);
         setLoadingProgress(100);
@@ -55,7 +54,7 @@ const CertificateViewPage = () => {
   };
 
   useEffect(() => {
-    if (certificate && canvasRef.current) {
+    if (certificate) {
       runCertificateGeneration(certificate.userName, certificate.courseName, certificate.profilePicUrl);
     }
   }, [certificate]);
@@ -83,7 +82,6 @@ const CertificateViewPage = () => {
         <title>Certificate for {certificate?.courseName}</title>
       </Helmet>
       <div className="min-h-screen px-6 py-12">
-        <canvas ref={canvasRef} style={{ display: 'none' }} />
         <div className="container mx-auto max-w-4xl">
           <BackButton to="/dashboard/certificates" />
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}>
