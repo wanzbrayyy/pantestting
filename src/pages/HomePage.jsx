@@ -14,17 +14,17 @@ const HomePage = () => {
         className="space-y-6"
       >
         <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight">
-          selamat datang du learnn
+          Selamat Datang di Platform Kursus Kami
         </h1>
         <p className="text-lg md:text-xl text-purple-200 max-w-2xl mx-auto">
-          mari melatih keterampilan anda dalam context apaun dari mulai cyber, developer website, mobile, ui/ux, dan lain lainnya berdama learnn|wanzofc
+          Tingkatkan keahlian Anda dengan kursus interaktif, kuis menantang, dan materi pembelajaran yang komprehensif.
         </p>
         <div className="flex justify-center gap-4">
           <Button asChild>
-            <Link to="/courses">kunjungi courses</Link>
+            <Link to="/courses">Lihat Kursus</Link>
           </Button>
           <Button asChild variant="outline">
-            <Link to="/register">daftar</Link>
+            <Link to="/login">Masuk</Link>
           </Button>
         </div>
       </motion.div>

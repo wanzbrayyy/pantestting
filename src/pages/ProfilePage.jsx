@@ -120,7 +120,7 @@ const ProfilePage = () => {
                 <Card className="glass-effect border-white/20">
                   <CardHeader><CardTitle className="text-xl text-white">{t('discussionGroup')}</CardTitle></CardHeader>
                   <CardContent>
-                    <a href="https://t.me/c/2708886056/1" target="_blank" rel="noopener noreferrer">
+                    <a href="https://t.me/" target="_blank" rel="noopener noreferrer">
                       <Button className="w-full bg-blue-500 hover:bg-blue-600 text-white"><i className="fab fa-telegram-plane mr-2"></i>{t('joinCommunity')}</Button>
                     </a>
                   </CardContent>

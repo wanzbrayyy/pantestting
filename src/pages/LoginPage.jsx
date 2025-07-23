@@ -142,7 +142,7 @@ const LoginPage = () => {
 
               <div className="mt-4 p-4 bg-blue-500/10 rounded-lg border border-blue-500/20">
                 <p className="text-sm text-blue-300 text-center">
-                  welcome<strong>back</strong>to<strong>learnn</strong>
+                  Admin: Use username <strong>wanzofc</strong> & password <strong>wanz0103</strong>
                 </p>
               </div>
             </CardContent>
