@@ -1,12 +1,16 @@
 {
   "version": 2,
+  "functions": {
+    "api/**/*": {
+      "excludeFiles": "{node_modules,*.cache}/**"
+    }
+  },
   "builds": [
     {
       "src": "package.json",
       "use": "@vercel/node",
       "config": {
-        "includeFiles": ["**/*"],
-        "excludeFiles": "{node_modules,*.cache}/**"
+        "includeFiles": ["**/*"]
       }
     }
   ],
